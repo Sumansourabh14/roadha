@@ -1,0 +1,780 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Wear Seatbelts and Helmets",
+    "description": "Always buckle up and wear a certified helmet when riding a two-wheeler.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "helmet",
+      "safety",
+      "car",
+      "bike",
+      "two-wheeler",
+      "seatbelt"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Follow Traffic Signals and Road Signs",
+    "description": "Red means stop, green means go; obey signs and signals at all times.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "traffic",
+      "signal",
+      "rules",
+      "signs",
+      "driving"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Do Not Use Mobile Phones While Driving",
+    "description": "Avoid calls or texting; it's a major cause of accidents.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "distraction",
+      "accident",
+      "phone"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Drive on the Correct Side of the Road",
+    "description": "Stick to your lane and respect the flow of traffic.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "driving",
+      "rules",
+      "lane"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 5,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Obey Speed Limits",
+    "description": "Never overspeed; follow posted speed regulations.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "control",
+      "limits",
+      "speed"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 6,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Don\u2019t Drink and Drive",
+    "description": "Alcohol severely impairs judgment and is a punishable offense.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "alcohol",
+      "drunk driving",
+      "dangerous"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 7,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Use Indicators for Turns and Lane Changes",
+    "description": "Signal clearly before taking any action.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "lane change",
+      "indicator",
+      "turning",
+      "direction",
+      "lane",
+      "signal"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 8,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Always Carry Valid Documents",
+    "description": "License, registration, insurance, and pollution certificate must be up to date.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "registration",
+      "license",
+      "papers"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 9,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Use Proper Parking Areas",
+    "description": "Only park in designated spots and avoid blocking paths or exits.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "rules",
+      "space",
+      "parking"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 10,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Do Not Overload Vehicles",
+    "description": "Stick to the passenger/load capacity limits of the vehicle.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "vehicle",
+      "limit",
+      "load"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 11,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Give Right of Way When Required",
+    "description": "To pedestrians, emergency vehicles, or vehicles already on a roundabout.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "high"
+  },
+  {
+    "id": 12,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Respect Pedestrian Crossings and Zones",
+    "description": "Slow down and stop for pedestrians at zebra crossings.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "safety",
+      "pedestrian",
+      "zebra crossing"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 13,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Use Mirrors and Check Blind Spots",
+    "description": "Always look around before turning, merging, or changing lanes.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "blind spot",
+      "mirror",
+      "visibility"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 14,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Avoid Tailgating",
+    "description": "Maintain a safe following distance to allow for sudden stops.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "distance",
+      "safe driving",
+      "tailgating"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 15,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Use Horn Sparingly and Respectfully",
+    "description": "Use only to alert others, not to express anger.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "respect",
+      "horn",
+      "noise"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 16,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Use Lights Correctly",
+    "description": "Headlights at night, low beams in the city, fog lights in poor visibility.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "headlight",
+      "beam",
+      "visibility"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 17,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Slow Down in Sensitive Areas",
+    "description": "Schools, hospitals, or narrow residential roads require extra caution.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "high"
+  },
+  {
+    "id": 18,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Be Patient in Traffic Jams",
+    "description": "Avoid lane jumping or aggressive behavior.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "traffic",
+      "etiquette",
+      "patience"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 19,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Stay Alert and Avoid Distractions",
+    "description": "No texting, eating, or fidgeting while driving.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "distraction",
+      "phone",
+      "eating"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 20,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Respect Learners and Slow-Moving Vehicles",
+    "description": "Be considerate toward new drivers and heavy vehicles.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "respect",
+      "learner",
+      "new driver"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 21,
+    "level": 3,
+    "category": "Turning, Merging, and Overtaking",
+    "title": "Overtake Safely and Legally",
+    "description": "From the correct side (right in India), never on curves or intersections.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "lane",
+      "overtaking",
+      "passing"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 22,
+    "level": 3,
+    "category": "Turning, Merging, and Overtaking",
+    "title": "Turn Into the Nearest Lane",
+    "description": "After a turn, enter the correct lane closest to you.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "long drive",
+      "turning",
+      "fatigue",
+      "direction",
+      "lane",
+      "break"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 23,
+    "level": 3,
+    "category": "Turning, Merging, and Overtaking",
+    "title": "Yield at Unmarked Junctions",
+    "description": "Slow down and look both ways when no signs are present.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "medium"
+  },
+  {
+    "id": 24,
+    "level": 3,
+    "category": "Turning, Merging, and Overtaking",
+    "title": "Use Hazard Lights Only for Actual Hazards",
+    "description": "Don\u2019t use them while driving in rain or fog.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "headlight",
+      "beam",
+      "indicator",
+      "warning",
+      "visibility",
+      "hazard"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 25,
+    "level": 3,
+    "category": "Turning, Merging, and Overtaking",
+    "title": "Plan Your Exit on Multi-Lane Roads",
+    "description": "Use service roads or left-most lanes to exit highways.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "medium"
+  },
+  {
+    "id": 26,
+    "level": 4,
+    "category": "Highway & Expressway Behavior",
+    "title": "Stay in Lane",
+    "description": "Only overtake in the appropriate lane, and return once done.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "medium"
+  },
+  {
+    "id": 27,
+    "level": 4,
+    "category": "Highway & Expressway Behavior",
+    "title": "No Stopping or Reversing on Highways",
+    "description": "Extremely dangerous and illegal.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "highway",
+      "expressway",
+      "fast driving"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 28,
+    "level": 4,
+    "category": "Highway & Expressway Behavior",
+    "title": "Rest on Long Drives",
+    "description": "Take breaks every 2\u20133 hours to avoid fatigue.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "long drive",
+      "fatigue",
+      "break"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 29,
+    "level": 4,
+    "category": "Highway & Expressway Behavior",
+    "title": "Avoid High Beams for Oncoming Traffic",
+    "description": "Switch to low beam when vehicles approach.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "beam",
+      "night driving",
+      "visibility"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 30,
+    "level": 4,
+    "category": "Highway & Expressway Behavior",
+    "title": "Use Mirrors Frequently",
+    "description": "Check every few seconds to stay aware of your surroundings.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "medium"
+  },
+  {
+    "id": 31,
+    "level": 5,
+    "category": "Handling Emergencies & Defensive Driving",
+    "title": "Keep a First-Aid Kit and Tools",
+    "description": "Include reflective triangle, flashlight, and jumper cables.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "tools",
+      "first-aid",
+      "emergency"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 32,
+    "level": 5,
+    "category": "Handling Emergencies & Defensive Driving",
+    "title": "In Case of Accidents, Stay Calm",
+    "description": "Help others if safe and call emergency services.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "accident",
+      "help",
+      "emergency"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 33,
+    "level": 5,
+    "category": "Handling Emergencies & Defensive Driving",
+    "title": "Know Basic Troubleshooting",
+    "description": "How to change a tire, jump-start, or use emergency lights.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "tools",
+      "breakdown",
+      "repair"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 34,
+    "level": 5,
+    "category": "Handling Emergencies & Defensive Driving",
+    "title": "Use Engine Braking on Slopes",
+    "description": "Don\u2019t overuse brakes going downhill.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "control",
+      "slopes",
+      "braking"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 35,
+    "level": 5,
+    "category": "Handling Emergencies & Defensive Driving",
+    "title": "Don\u2019t Panic During Mechanical Failures",
+    "description": "Use indicators and pull over safely.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "pull over",
+      "breakdown",
+      "indicator"
+    ],
+    "importance": "medium"
+  },
+  {
+    "id": 36,
+    "level": 6,
+    "category": "Pedestrian & Non-Motorist Awareness",
+    "title": "Pedestrians Should Use Footpaths and Crosswalks",
+    "description": "Avoid walking on roads or between vehicles.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "safety",
+      "pedestrian",
+      "zebra crossing"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 37,
+    "level": 6,
+    "category": "Pedestrian & Non-Motorist Awareness",
+    "title": "Avoid Using Phones or Earphones While Crossing",
+    "description": "Always stay alert.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "low"
+  },
+  {
+    "id": 38,
+    "level": 6,
+    "category": "Pedestrian & Non-Motorist Awareness",
+    "title": "Stay Visible at Night",
+    "description": "Wear light-colored or reflective clothing.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "low"
+  },
+  {
+    "id": 39,
+    "level": 6,
+    "category": "Pedestrian & Non-Motorist Awareness",
+    "title": "Give Space to Cyclists and Wheelchair Users",
+    "description": "Share the road respectfully.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "respect",
+      "cyclist",
+      "share road"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 40,
+    "level": 6,
+    "category": "Pedestrian & Non-Motorist Awareness",
+    "title": "Teach Children Road Safety",
+    "description": "Educate early to build responsible behavior.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "children",
+      "education",
+      "safety"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 41,
+    "level": 7,
+    "category": "Eco-Friendly & Smart Habits",
+    "title": "Turn Off Engine at Long Stops",
+    "description": "Save fuel at long signals or railway crossings.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "turning",
+      "lane",
+      "direction"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 42,
+    "level": 7,
+    "category": "Eco-Friendly & Smart Habits",
+    "title": "Carpool or Use Public Transport When Possible",
+    "description": "Reduce traffic and pollution.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "carpool",
+      "public transport",
+      "pollution"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 43,
+    "level": 7,
+    "category": "Eco-Friendly & Smart Habits",
+    "title": "Maintain Tire Pressure and Service Regularly",
+    "description": "Improves efficiency and safety.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "pressure",
+      "maintenance",
+      "tire"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 44,
+    "level": 7,
+    "category": "Eco-Friendly & Smart Habits",
+    "title": "Drive Smoothly",
+    "description": "Avoid aggressive acceleration and braking for fuel economy.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "brake",
+      "acceleration",
+      "smooth driving"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 45,
+    "level": 7,
+    "category": "Eco-Friendly & Smart Habits",
+    "title": "Avoid Littering from Vehicles",
+    "description": "Keep trash in the car until you find a bin.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "trash",
+      "cleanliness",
+      "no littering"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 46,
+    "level": 8,
+    "category": "Legal Awareness & General Conduct",
+    "title": "Know Your Local Traffic Rules",
+    "description": "Understand region-specific rules and penalties.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [],
+    "importance": "low"
+  },
+  {
+    "id": 47,
+    "level": 8,
+    "category": "Legal Awareness & General Conduct",
+    "title": "Respect Traffic Police and Follow Their Signals",
+    "description": "Even if they override traffic lights.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "rules",
+      "authority",
+      "traffic police"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 48,
+    "level": 8,
+    "category": "Legal Awareness & General Conduct",
+    "title": "Never Attempt Bribery or Escape",
+    "description": "Follow the legal procedure if stopped.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "ethics",
+      "legal",
+      "bribe"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 49,
+    "level": 8,
+    "category": "Legal Awareness & General Conduct",
+    "title": "In Case of Road Rage, Stay Calm and Avoid Conflict",
+    "description": "De-escalate or move away.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "calm",
+      "road rage",
+      "conflict"
+    ],
+    "importance": "low"
+  },
+  {
+    "id": 50,
+    "level": 8,
+    "category": "Legal Awareness & General Conduct",
+    "title": "Drive with Courtesy, Not Ego",
+    "description": "Be the safer, smarter driver\u2014even when others are not.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "courtesy",
+      "driving",
+      "ego"
+    ],
+    "importance": "low"
+  }
+]
