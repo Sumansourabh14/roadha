@@ -4,12 +4,12 @@ import roadSafetyCourseBegineerData from "@/data/road_safety_rules_with_tags.jso
 
 const RoadSafety = () => {
   return (
-    <div>
+    <section className="px-8">
       <section className="py-8">
         <H1 title="Ultimate Road Safety Course" />
       </section>
       <ItemTable data={roadSafetyCourseBegineerData} />
-    </div>
+    </section>
   );
 };
 

@@ -16,7 +16,7 @@ const Learn = () => {
       </section>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 py-4">
-        <Link href={`/learn/road-safety-course-begineers`}>
+        <Link href={`/learn/road-safety-course-beginners`}>
           <Card>
             <CardHeader>
               <CardTitle>Ultimate Road Safety Course</CardTitle>
@@ -25,9 +25,8 @@ const Learn = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Begineer</p>
+              <p>Beginner</p>
             </CardContent>
-            {/* <CardFooter></CardFooter> */}
           </Card>
         </Link>
       </section>
