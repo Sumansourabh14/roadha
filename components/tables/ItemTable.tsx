@@ -28,7 +28,6 @@ type Props = {
 const ItemTable = ({ data }: Props) => {
   return (
     <Table className="max-w-[1400px] mx-auto">
-      <TableCaption>A list of your recent invoices.</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead className="w-[50px] text-center">S. No</TableHead>
