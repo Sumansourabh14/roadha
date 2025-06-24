@@ -11,7 +11,7 @@ import Link from "next/link";
 const Learn = () => {
   return (
     <div className="max-w-[1390px] mx-auto px-8">
-      <section className="py-8">
+      <section className="pt-24 pb-8">
         <H1 title="Learn" />
       </section>
 

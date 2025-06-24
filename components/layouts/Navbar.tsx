@@ -16,7 +16,7 @@ import { Button } from "../ui/button";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Learn", href: "/learn" },
-  { name: "About", href: "/about" },
+  // { name: "About", href: "/about" },
 ];
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
       : "text-muted-foreground hover:text-primary";
 
   return (
-    <header className="w-full border-b bg-background">
+    <header className="w-full max-w-[1300px] mx-auto fixed top-2 left-1/2 transform -translate-x-1/2 z-50 rounded-lg border-2 shadow-xl border-gray-100 bg-white dark:bg-black px-4 sm:px-6">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold text-primary">
           {SITE_METADATA.title}
@@ -45,7 +45,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button>Login</Button>
+          {/* <Button>Login</Button> */}
         </nav>
 
         {/* Mobile Menu */}

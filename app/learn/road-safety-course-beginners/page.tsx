@@ -5,7 +5,7 @@ import roadSafetyCourseBegineerData from "@/data/road_safety_rules_with_tags.jso
 const RoadSafety = () => {
   return (
     <section className="px-8">
-      <section className="py-8">
+      <section className="pt-24 pb-8">
         <H1 title="Ultimate Road Safety Course" />
       </section>
       <ItemTable data={roadSafetyCourseBegineerData} />
