@@ -8,7 +8,8 @@ import {
 } from "../ui/table";
 
 type Item = {
-  id: number;
+  _id: number;
+  serial_no: number;
   level: number;
   category: string;
   title: string;
@@ -39,8 +40,10 @@ const ItemTable = ({ data }: Props) => {
       </TableHeader>
       <TableBody>
         {data.map((item: Item) => (
-          <TableRow key={item.id}>
-            <TableCell className="font-medium text-center">{item.id}</TableCell>
+          <TableRow key={item._id}>
+            <TableCell className="font-medium text-center">
+              {item.serial_no}
+            </TableCell>
             <TableCell className="break-words whitespace-normal">
               {item.title}
             </TableCell>
