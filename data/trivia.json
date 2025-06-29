@@ -1,0 +1,32 @@
+[
+  {
+    "question": "You're driving in heavy rain. What's safest?",
+    "options": [
+      "Speed up",
+      "Slow down",
+      "Use hazard lights",
+      "Turn off lights"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "You’re approaching a red light. What should you do?",
+    "options": ["Stop", "Slow down", "Speed through", "Flash lights"],
+    "correct": 0
+  },
+  {
+    "question": "When should you use high beams?",
+    "options": ["Always", "Fog", "Empty highway", "Daytime"],
+    "correct": 2
+  },
+  {
+    "question": "You're at a stop sign. What's correct?",
+    "options": ["Yield", "Stop fully", "Honk", "Roll through"],
+    "correct": 1
+  },
+  {
+    "question": "You're using a phone while driving. Is it safe?",
+    "options": ["Yes", "Only on calls", "Use hands-free", "No"],
+    "correct": 3
+  }
+]

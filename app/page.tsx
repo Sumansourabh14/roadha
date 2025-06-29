@@ -1,4 +1,5 @@
 import { BentoGrid1 } from "@/components/layouts/BentoGrid1";
+import TriviaPopup from "@/components/popups/TriviaPopup";
 import Hero from "@/components/sections/home/Hero";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Hero />
         <BentoGrid1 />
+        <TriviaPopup />
       </main>
     </div>
   );
