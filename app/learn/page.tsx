@@ -10,22 +10,23 @@ import Link from "next/link";
 
 const Learn = () => {
   return (
-    <div className="max-w-[1390px] mx-auto px-8">
+    <div className="max-w-[1390px] mx-auto px-8 min-h-[70vh]">
       <section className="pt-24 pb-8">
-        <H1 title="Learn" />
+        <H1 title="Learn Road Safety" />
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 py-4">
+      <section className="grid grid-cols-1 py-4">
         <Link href={`/learn/road-safety-course-beginners`}>
-          <Card>
+          <Card className="max-w-[500px] mx-auto">
             <CardHeader>
               <CardTitle>Ultimate Road Safety Course</CardTitle>
               <CardDescription>
-                All you need to get started on road safety rules and tipss
+                A complete beginner-friendly guide to road rules, tips &
+                real-life scenarios.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Beginner</p>
+              <p>Level: Beginner</p>
             </CardContent>
           </Card>
         </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import data from "@/data/trivia.json";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   AlertDialog,
@@ -43,21 +44,25 @@ const TriviaPopup = () => {
       <div className="mt-4 text-green-600 font-semibold">
         ✅ Correct! You&apos;re road smart.
         <br />
-        <Button className="mt-2" onClick={() => setOpen(false)}>
-          Start Exploring
-        </Button>
+        <Link href={`/`}>
+          <Button className="mt-2" onClick={() => setOpen(false)}>
+            Start Exploring
+          </Button>
+        </Link>
       </div>
     ) : (
       <div className="mt-4 text-red-600 font-semibold">
         ❌ Not quite. That&apos;s not the safest option.
         <br />
-        <Button
-          variant="destructive"
-          className="mt-2"
-          onClick={() => setOpen(false)}
-        >
-          Learn What to Do
-        </Button>
+        <Link href={`/learn/road-safety-course-beginners`}>
+          <Button
+            variant="destructive"
+            className="mt-2 cursor-pointer"
+            onClick={() => setOpen(false)}
+          >
+            Learn What to Do
+          </Button>
+        </Link>
       </div>
     );
   };

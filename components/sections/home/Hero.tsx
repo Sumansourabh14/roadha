@@ -9,21 +9,15 @@ export default function Hero() {
           Making Roads Safer, Together
         </h1>
         <p className="mt-6 text-lg">
-          Join the movement to promote awareness, report unsafe driving, and
-          save lives. Empowering citizens with tools to educate, report, and
-          change road behavior.
+          A step-by-step road safety platform built for India — packed with
+          tips, rules, videos, and curated resources to help you become a safer
+          driver and informed citizen.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <Link href="/report">
-            <Button className="text-base px-6 py-3">Report an Incident</Button>
-          </Link>
           <Link href="/learn">
-            <Button
-              variant="outline"
-              className="text-base px-6 py-3 border-gray-500"
-            >
-              Learn Road Rules
+            <Button className="text-base px-6 py-3 border-gray-500 cursor-pointer">
+              Start Learning Road Safety
             </Button>
           </Link>
         </div>
