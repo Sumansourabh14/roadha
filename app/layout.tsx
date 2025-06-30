@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { RootProvider } from "fumadocs-ui/provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
-        <Analytics />
+        <RootProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <Analytics />
+        </RootProvider>
       </body>
     </html>
   );
