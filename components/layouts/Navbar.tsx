@@ -12,11 +12,12 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
+import { ModeToggle } from "../theme/ModeToggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Learn", href: "/learn" },
-  // { name: "About", href: "/about" },
+  { name: "Road Safety Course", href: "/docs" },
 ];
 
 export default function Navbar() {
@@ -28,7 +29,7 @@ export default function Navbar() {
       : "text-muted-foreground hover:text-primary";
 
   return (
-    <header className="w-full max-w-[1300px] mx-auto fixed top-2 left-1/2 transform -translate-x-1/2 z-50 rounded-lg border-2 shadow-xl border-gray-100 bg-white dark:bg-black px-4 sm:px-6">
+    <header className="w-full max-w-[1300px] mx-auto fixed top-2 left-1/2 transform -translate-x-1/2 z-50 rounded-lg border-2 shadow-xl bg-white dark:bg-black px-4 sm:px-6">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold text-primary">
           {SITE_METADATA.title}
@@ -36,6 +37,7 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 items-center">
+          <ModeToggle />
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -60,6 +62,7 @@ export default function Navbar() {
               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-4">
+              <ModeToggle />
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
