@@ -14,6 +14,8 @@
 - **TypeScript**
 - **shadcn/ui**
 - **Tailwind CSS**
+- [**Fumadocs**](https://fumadocs.dev/)
+- [**react-tweet**](https://react-tweet.vercel.app/)
 - **Radix UI**
 - **React Icons**
 
