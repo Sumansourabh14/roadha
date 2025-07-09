@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is <strong>legally required</strong> while riding a two-wheeler in India?",
+    "type": "multiple",
+    "options": [
+      "Wearing a helmet",
+      "Wearing sunglasses",
+      "Using indicators",
+      "Having a loud horn"
+    ],
+    "answer": 0,
+    "xp": 10
+  },
+  {
+    "id": 2,
+    "question": "When should <strong>rear seat passengers</strong> wear seatbelts in India?",
+    "type": "multiple",
+    "options": [
+      "Only on highways",
+      "Never, it's optional",
+      "Always, it’s mandatory",
+      "Only when the driver says so"
+    ],
+    "answer": 2,
+    "xp": 10
+  },
+  {
+    "id": 3,
+    "question": "Why is a <strong>helmet with ISI certification</strong> important?",
+    "type": "multiple",
+    "options": [
+      "It looks cooler",
+      "It meets safety standards",
+      "It's lighter in weight",
+      "It’s optional by law"
+    ],
+    "answer": 1,
+    "xp": 10
+  },
+  {
+    "id": 4,
+    "question": "Which statement is <strong>true</strong> about airbags and seatbelts?",
+    "type": "multiple",
+    "options": [
+      "Airbags replace the need for seatbelts",
+      "Seatbelts are optional if airbags are present",
+      "Both seatbelts and airbags are needed for safety",
+      "Airbags always deploy correctly without seatbelts"
+    ],
+    "answer": 2,
+    "xp": 10
+  },
+  {
+    "id": 5,
+    "question": "What is the <strong>penalty</strong> for not wearing a helmet or seatbelt in many Indian states?",
+    "type": "multiple",
+    "options": [
+      "No penalty at all",
+      "A fine or imprisonment",
+      "Community service",
+      "Warning only on first offense"
+    ],
+    "answer": 1,
+    "xp": 10
+  }
+]
