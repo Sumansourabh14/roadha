@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Table,
   TableBody,
@@ -13,6 +14,7 @@ type Item = {
   category: string;
   title: string;
   description: string;
+  article_link?: string;
   youtube_link?: string;
   google_slide_link?: string;
   reference_video_link: string[]; // fix this
@@ -42,7 +44,13 @@ const ItemTable = ({ data }: Props) => {
           <TableRow key={item.id}>
             <TableCell className="font-medium text-center">{item.id}</TableCell>
             <TableCell className="break-words whitespace-normal">
-              {item.title}
+              {!!item.article_link ? (
+                <Link href={`${item.article_link}`} className="underline">
+                  {item.title}
+                </Link>
+              ) : (
+                item.title
+              )}
             </TableCell>
             <TableCell className="break-words whitespace-normal">
               {item.description}
