@@ -1,12 +1,10 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import { SITE_METADATA } from "@/data/constants";
+import { Analytics } from "@vercel/analytics/next";
+import { RootProvider } from "fumadocs-ui/provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
-import { Analytics } from "@vercel/analytics/next";
-import { RootProvider } from "fumadocs-ui/provider";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,9 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <RootProvider>
-            <Navbar />
             {children}
-            <Footer />
             <Analytics />
           </RootProvider>
         </ThemeProvider>
