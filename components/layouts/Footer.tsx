@@ -37,6 +37,12 @@ const Footer = () => {
             >
               Learn
             </Link>
+            <Link
+              href="/video/upload"
+              className="hover:text-black dark:hover:text-white"
+            >
+              Upload Video
+            </Link>
           </nav>
 
           {/* Social Icons */}
