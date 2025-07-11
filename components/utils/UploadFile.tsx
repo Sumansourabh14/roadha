@@ -14,6 +14,7 @@ import { useRef, useState } from "react";
 import { toast } from "sonner";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
+import { Switch } from "../ui/switch";
 
 type ExtendedUploadResponse = UploadResponse & {
   duration: number;
@@ -25,7 +26,7 @@ const UploadFile = () => {
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  // const [isPublic, setIsPublic] = useState(true);
+  const [isPublic, setIsPublic] = useState(true);
   const [loading, setLoading] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -113,7 +114,7 @@ const UploadFile = () => {
         description,
         duration: uploadResponse.duration,
         views: 0,
-        isPublic: true,
+        isPublic,
       };
 
       const res = await uploadVideo(payload);
@@ -198,6 +199,15 @@ const UploadFile = () => {
             />
           </section>
         )}
+        <section>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            Set private
+          </label>
+          <Switch
+            onCheckedChange={() => setIsPublic(false)}
+            className="cursor-pointer"
+          />
+        </section>
         <section className="flex items-center gap-4">
           <Button
             type="button"
