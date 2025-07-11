@@ -1,21 +1,32 @@
 "use client";
 
+import { uploadVideo } from "@/services/globalApi";
 import {
   ImageKitAbortError,
   ImageKitInvalidRequestError,
   ImageKitServerError,
   ImageKitUploadNetworkError,
   upload,
+  UploadResponse,
 } from "@imagekit/next";
+import { Loader2Icon, Trash } from "lucide-react";
 import { useRef, useState } from "react";
+import { toast } from "sonner";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { Trash } from "lucide-react";
+
+type ExtendedUploadResponse = UploadResponse & {
+  duration: number;
+};
 
 const UploadFile = () => {
-  // keep track of the current upload progress (percentage)
   const [progress, setProgress] = useState(0);
   const [previewUrl, setPreviewUrl] = useState("");
+
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  // const [isPublic, setIsPublic] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -54,18 +65,10 @@ const UploadFile = () => {
     }
   };
 
-  /**
-   * Handles the file upload process.
-   *
-   * This function:
-   * - Validates file selection.
-   * - Retrieves upload authentication credentials.
-   * - Initiates the file upload via the ImageKit SDK.
-   * - Updates the upload progress.
-   * - Catches and processes errors accordingly.
-   */
   const handleUpload = async () => {
+    setLoading(true);
     const fileInput = fileInputRef.current;
+
     if (!fileInput || !fileInput.files || fileInput.files.length === 0) {
       alert("Please select a file to upload");
       return;
@@ -83,7 +86,7 @@ const UploadFile = () => {
     const { signature, expire, token, publicKey } = authParams;
 
     try {
-      const uploadResponse = await upload({
+      const uploadResponse = (await upload({
         expire,
         token,
         signature,
@@ -95,8 +98,31 @@ const UploadFile = () => {
         },
         // Abort signal to allow cancellation of the upload if needed.
         abortSignal: abortController.signal,
-      });
+      })) as ExtendedUploadResponse;
+
       console.log("Upload response:", uploadResponse);
+
+      if (!uploadResponse.url) {
+        throw new Error("Upload failed: videoUrl is undefined");
+      }
+
+      const payload = {
+        videoUrl: uploadResponse.url,
+        thumbnail: uploadResponse.thumbnailUrl,
+        title,
+        description,
+        duration: uploadResponse.duration,
+        views: 0,
+        isPublic: true,
+      };
+
+      const res = await uploadVideo(payload);
+
+      if (res.status === 201) {
+        toast.success("Video has been uploaded successfully!");
+      } else {
+        toast.error("Video could not be uploaded");
+      }
     } catch (error) {
       if (error instanceof ImageKitAbortError) {
         console.error("Upload aborted:", error.reason);
@@ -109,6 +135,8 @@ const UploadFile = () => {
       } else {
         console.error("Upload error:", error);
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -116,6 +144,28 @@ const UploadFile = () => {
     <>
       <section className="max-w-xl mx-auto p-6 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm space-y-6 bg-white dark:bg-neutral-900 my-4">
         <section className="space-y-2">
+          <section>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Enter title
+            </label>
+            <Input
+              type="text"
+              placeholder="Enter title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </section>
+          <section>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Enter description
+            </label>
+            <Input
+              type="text"
+              placeholder="Enter description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </section>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Select a CCTV/Dashcam or any kind of video to upload
           </label>
@@ -152,10 +202,11 @@ const UploadFile = () => {
           <Button
             type="button"
             onClick={handleUpload}
-            disabled={progress > 0 && progress < 100}
+            disabled={loading || !title || !description || !previewUrl}
             className="cursor-pointer"
           >
             {progress > 0 && progress < 100 ? "Uploading..." : "Upload Video"}
+            {loading && <Loader2Icon className="animate-spin" />}
           </Button>
           {progress > 0 && (
             <span className="text-sm text-muted-foreground">
