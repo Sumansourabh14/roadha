@@ -1,5 +1,7 @@
 # Roadha
 
+![alt text](image.png)
+
 **Roadha** is a first-in-class Indian road safety platform that aims to educate users, promote safe driving behavior, and create awareness through structured learning and community participation.
 
 ## 🚀 Current Features
