@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="w-full py-48 flex items-center justify-center px-6">
       <div className="max-w-3xl text-center">
-        <h1 className="text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold tracking-tight">
+        <h1 className="text-5xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold tracking-tight">
           That&apos;s it! No More Accidents.
         </h1>
         <p className="max-w-xl mt-6 text-lg text-center mx-auto">
