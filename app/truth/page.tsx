@@ -26,7 +26,14 @@ const TruthPage = () => {
           <strong>
             over 1.5 lakh people were killed in road crashes in 2021 alone
           </strong>
-          . That’s <strong>one person every 3.5 minutes</strong>.
+          .
+        </p>
+        <p>
+          That’s{" "}
+          <span className="bg-red-400 text-black px-1.5 mx-0.5 rounded-xs select-none">
+            1 person every 3.5 minutes
+          </span>
+          .
         </p>
 
         <p>What’s worse?</p>
