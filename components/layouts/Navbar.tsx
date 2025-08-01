@@ -27,8 +27,8 @@ export default function Navbar() {
 
   const isActive = (href: string) =>
     pathname === href
-      ? "text-blue-600 dark:text-blue-400 font-semibold"
-      : "text-muted-foreground hover:text-primary";
+      ? "text-blue-600 dark:text-blue-400 font-bold"
+      : "text-muted-foreground hover:text-primary font-semibold";
 
   return (
     <header className="w-full max-w-[1440px] mx-auto fixed left-1/2 transform -translate-x-1/2 z-50 shadow-xl bg-white dark:bg-black px-8">
