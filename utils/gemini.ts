@@ -17,7 +17,6 @@ async function geminiAI(content: string) {
     },
   });
 
-  console.log(response.text);
   return response.text;
 }
 
