@@ -72,18 +72,21 @@ export default function Navbar() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-2 md:w-[300px] lg:w-[400px] grid-cols-1 lg:grid-cols-2">
-                <ListItem href="/docs/installation" title="Wrong side driving">
+                <ListItem
+                  href="/issues/driving/wrong-side"
+                  title="Wrong side driving"
+                >
+                  Stop wrong side driving. Why? Let me show you
+                </ListItem>
+                <ListItem href="/issues/driving/drunk" title="Drunk driving">
                   Coming soon...
                 </ListItem>
-                <ListItem href="/docs" title="Drunk driving">
-                  Coming soon...
-                </ListItem>
-                {/* <ListItem
-                  href="/docs/primitives/typography"
+                <ListItem
+                  href="/issues/driving/reckless"
                   title="Reckless driving"
                 >
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem> */}
+                  Coming soon...
+                </ListItem>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
