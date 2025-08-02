@@ -13,6 +13,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../theme/ModeToggle";
 import { Button } from "../ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "../ui/navigation-menu";
 
 const navLinks = [
   { name: "Learn", href: "/learn" },
@@ -36,19 +42,20 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 items-center">
+        <NavigationMenu className="hidden md:flex gap-6 items-center">
           <ModeToggle />
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={isActive(link.href)}
-            >
-              {link.name}
-            </Link>
-          ))}
-          {/* <Button>Login</Button> */}
-        </nav>
+          <NavigationMenuList>
+            {navLinks.map((link, index) => (
+              <NavigationMenuItem key={index}>
+                <NavigationMenuLink asChild>
+                  <Link href={link.href} className={isActive(link.href)}>
+                    {link.name}
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
 
         {/* Mobile Menu */}
         <Sheet>
@@ -59,7 +66,7 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="left" className="px-8">
             <SheetHeader>
-              <SheetTitle>Menu</SheetTitle>
+              <SheetTitle>Roadha</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-4">
               <ModeToggle />
