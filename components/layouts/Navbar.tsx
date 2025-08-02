@@ -15,9 +15,11 @@ import { ModeToggle } from "../theme/ModeToggle";
 import { Button } from "../ui/button";
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 
 const navLinks = [
@@ -26,13 +28,33 @@ const navLinks = [
   { name: "Road Safety Course", href: "/road-safety/beginner" },
 ];
 
+function ListItem({
+  title,
+  children,
+  href,
+  ...props
+}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+  return (
+    <li {...props}>
+      <NavigationMenuLink asChild>
+        <Link href={href}>
+          <div className="text-sm leading-none font-medium">{title}</div>
+          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+            {children}
+          </p>
+        </Link>
+      </NavigationMenuLink>
+    </li>
+  );
+}
+
 export default function Navbar() {
   const pathname = usePathname();
 
   const isActive = (href: string) =>
     pathname === href
       ? "text-green-600 dark:text-green-400 font-bold"
-      : "text-muted-foreground hover:text-primary hover:underline font-semibold";
+      : "text-muted-foreground hover:text-primary font-semibold";
 
   return (
     <header className="w-full max-w-[1440px] mx-auto px-8">
@@ -42,8 +64,29 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <NavigationMenu className="hidden md:flex gap-6 items-center">
+        <NavigationMenu className="hidden md:flex items-center">
           <ModeToggle />
+          <NavigationMenuItem className="list-none ml-2">
+            <NavigationMenuTrigger className="text-muted-foreground font-semibold">
+              Issues
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid gap-2 md:w-[300px] lg:w-[400px] grid-cols-1 lg:grid-cols-2">
+                <ListItem href="/docs/installation" title="Wrong side driving">
+                  Coming soon...
+                </ListItem>
+                <ListItem href="/docs" title="Drunk driving">
+                  Coming soon...
+                </ListItem>
+                {/* <ListItem
+                  href="/docs/primitives/typography"
+                  title="Reckless driving"
+                >
+                  Styles for headings, paragraphs, lists...etc
+                </ListItem> */}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
           <NavigationMenuList>
             {navLinks.map((link, index) => (
               <NavigationMenuItem key={index}>
