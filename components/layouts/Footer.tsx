@@ -25,6 +25,21 @@ const solutions = [
   },
 ];
 
+const issues = [
+  {
+    title: "Wrong side driving",
+    link: "/issues/driving/wrong-side",
+  },
+  {
+    title: "Drunk driving",
+    link: "/issues/driving/drunk",
+  },
+  {
+    title: "Reckless driving",
+    link: "/issues/driving/reckless",
+  },
+];
+
 const socialLinks = [
   {
     id: "1",
@@ -46,9 +61,9 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 py-10 flex flex-col gap-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between items-start gap-4 w-full">
           <section>
-            <h4 className="mb-4 text-muted-foreground uppercase">Solutions</h4>
+            <h4 className="mb-4 text-muted-foreground uppercase">AGENDA</h4>
             <section className="flex flex-col space-y-2">
-              {solutions.map((item, index) => (
+              {resources.map((item, index) => (
                 <Link
                   key={index}
                   href={item.link}
@@ -61,9 +76,24 @@ const Footer = () => {
           </section>
 
           <section>
-            <h4 className="mb-4 text-muted-foreground uppercase">AGENDA</h4>
+            <h4 className="mb-4 text-muted-foreground uppercase">ISSUES</h4>
             <section className="flex flex-col space-y-2">
-              {resources.map((item, index) => (
+              {issues.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.link}
+                  className="hover:text-black dark:hover:text-white"
+                >
+                  {item.title}
+                </Link>
+              ))}
+            </section>
+          </section>
+
+          <section>
+            <h4 className="mb-4 text-muted-foreground uppercase">Solutions</h4>
+            <section className="flex flex-col space-y-2">
+              {solutions.map((item, index) => (
                 <Link
                   key={index}
                   href={item.link}
