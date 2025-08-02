@@ -19,6 +19,10 @@ const solutions = [
     title: "Road Safety Course",
     link: "/road-safety/beginner",
   },
+  {
+    title: "Ask Roadha",
+    link: "/ask/roadha",
+  },
 ];
 
 const socialLinks = [
