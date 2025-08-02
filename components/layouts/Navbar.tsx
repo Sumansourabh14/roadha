@@ -11,8 +11,8 @@ import { SITE_METADATA } from "@/data/constants";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "../ui/button";
 import { ModeToggle } from "../theme/ModeToggle";
+import { Button } from "../ui/button";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -27,11 +27,11 @@ export default function Navbar() {
 
   const isActive = (href: string) =>
     pathname === href
-      ? "text-blue-600 dark:text-blue-400 font-bold"
-      : "text-muted-foreground hover:text-primary font-semibold";
+      ? "text-green-600 dark:text-green-400 font-bold"
+      : "text-muted-foreground hover:text-primary hover:underline font-semibold";
 
   return (
-    <header className="w-full max-w-[1440px] mx-auto fixed left-1/2 transform -translate-x-1/2 z-50 shadow-xl bg-white dark:bg-black px-8">
+    <header className="w-full max-w-[1440px] mx-auto px-8">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold text-primary">
           {SITE_METADATA.title}
@@ -74,7 +74,7 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Button className="mt-2 w-full">Login</Button>
+              {/* <Button className="mt-2 w-full">Login</Button> */}
             </nav>
           </SheetContent>
         </Sheet>
