@@ -8,6 +8,7 @@ import ReactMarkdown from "react-markdown";
 
 type ResponseProps = {
   id: string;
+  input: string;
   output: string;
 };
 
@@ -29,12 +30,12 @@ const AskRoadha = () => {
 
     try {
       const res = await axios.post<GeminiResponse>(`/api/gemini`, { prompt });
-      console.log({ res });
 
       setResponses([
         ...responses,
         {
           id: Date.now().toString(),
+          input: prompt,
           output: res.data.output,
         },
       ]);
@@ -51,15 +52,16 @@ const AskRoadha = () => {
   };
 
   return (
-    <section className="py-32 min-h-[40rem]">
-      <section className="max-w-2xl mx-auto px-4 py-6">
+    <section className="py-20 lg:py-28 min-h-[40rem]">
+      <section className="max-w-2xl mx-auto px-8">
+        <h1 className="text-center text-4xl font-bold">Ask Roadha...</h1>
         {error && <p className="text-red-500">{error}</p>}
-        {responses.length === 0 && !error && (
-          <h1 className="text-center text-4xl font-bold">Ask Roadha...</h1>
-        )}
         <section className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           {responses.map((item) => (
             <div key={item.id} className="prose ">
+              <div className="p-2">
+                <p className="text-end text-muted-foreground">{item.input}</p>
+              </div>
               <ReactMarkdown>{item.output}</ReactMarkdown>
               <hr />
             </div>

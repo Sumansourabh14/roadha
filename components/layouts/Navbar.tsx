@@ -15,10 +15,8 @@ import { ModeToggle } from "../theme/ModeToggle";
 import { Button } from "../ui/button";
 
 const navLinks = [
-  { name: "Home", href: "/" },
   { name: "Learn", href: "/learn" },
   { name: "Ask", href: "/ask/roadha" },
-  // { name: "Upload Video", href: "/video/upload" },
   { name: "Road Safety Course", href: "/road-safety/beginner" },
 ];
 
