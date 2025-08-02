@@ -54,7 +54,7 @@ const AskRoadha = () => {
   return (
     <section className="py-20 lg:py-28 min-h-[40rem]">
       <section className="max-w-2xl mx-auto px-8">
-        <h1 className="text-center text-4xl font-bold">Ask Roadha...</h1>
+        <h1 className="text-center text-5xl font-bold">Ask Roadha...</h1>
         {error && <p className="text-red-500">{error}</p>}
         <section className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           {responses.map((item) => (
