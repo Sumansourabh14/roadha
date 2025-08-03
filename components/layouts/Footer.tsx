@@ -16,6 +16,10 @@ const solutions = [
     link: "/learn",
   },
   {
+    title: "Resources",
+    link: "/resources",
+  },
+  {
     title: "Road Safety Course",
     link: "/road-safety/beginner",
   },
@@ -37,6 +41,10 @@ const issues = [
   {
     title: "Reckless driving",
     link: "/issues/driving/reckless",
+  },
+  {
+    title: "Ethanol Blended Petrol",
+    link: "/issues/ethanol-blended-petrol",
   },
 ];
 

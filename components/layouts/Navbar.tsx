@@ -24,6 +24,7 @@ import {
 
 const navLinks = [
   { name: "Learn", href: "/learn" },
+  { name: "Resources", href: "/resources" },
   { name: "Ask", href: "/ask/roadha" },
   { name: "Road Safety Course", href: "/road-safety/beginner" },
 ];
@@ -86,6 +87,12 @@ export default function Navbar() {
                   title="Reckless driving"
                 >
                   Coming soon...
+                </ListItem>
+                <ListItem
+                  href="/issues/ethanol-blended-petrol"
+                  title="Ethanol Blended Petrol"
+                >
+                  Why ethanol blended petrol is misleading?
                 </ListItem>
               </ul>
             </NavigationMenuContent>
