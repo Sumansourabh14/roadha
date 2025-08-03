@@ -87,6 +87,12 @@ export default function Navbar() {
                 >
                   Coming soon...
                 </ListItem>
+                <ListItem
+                  href="/issues/ethanol-blended-petrol"
+                  title="Ethanol Blended Petrol"
+                >
+                  Why ethanol blended petrol is misleading?
+                </ListItem>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
