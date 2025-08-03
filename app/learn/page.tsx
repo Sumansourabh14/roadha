@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Learn = () => {
   return (
-    <div className="max-w-[1390px] mx-auto px-8 min-h-[70vh]">
+    <section className="max-w-[1440px] mx-auto px-8 min-h-[70vh]">
       <section className="pt-24 pb-8">
         <H1 title="Learn Road Safety" />
       </section>
@@ -31,7 +31,7 @@ const Learn = () => {
           </Card>
         </Link>
       </section>
-    </div>
+    </section>
   );
 };
 
