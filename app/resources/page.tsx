@@ -26,10 +26,7 @@ const Resources = async () => {
                 <Link href={`/resources/${item.id}`}>
                   <CardTitle>{item.title}</CardTitle>
                 </Link>
-                <CardDescription>
-                  A complete beginner-friendly guide to road rules, tips &
-                  real-life scenarios.
-                </CardDescription>
+                <CardDescription>{item.description}</CardDescription>
               </CardHeader>
               <CardFooter>
                 <a
