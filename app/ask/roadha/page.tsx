@@ -55,7 +55,7 @@ const AskRoadha = () => {
     <section className="py-20 lg:py-28 min-h-[40rem]">
       <section className="max-w-2xl mx-auto px-8">
         <h1 className="text-center text-5xl font-bold">Ask Roadha...</h1>
-        {error && <p className="text-red-500">{error}</p>}
+        {error && <p className="text-red-500 text-center mt-8">{error}</p>}
         <section className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           {responses.map((item) => (
             <div key={item.id} className="prose ">
@@ -75,12 +75,15 @@ const AskRoadha = () => {
           />
           <Button
             onClick={handleAskRoadha}
-            disabled={prompt.length === 0 || isLoading}
+            disabled={prompt.length === 0 || isLoading || prompt.length > 300}
             className="cursor-pointer"
           >
             {isLoading ? "Loading..." : "Ask"}
           </Button>
         </section>
+        {prompt.length > 300 && (
+          <p className="text-red-500 mt-4 text-sm">Character limit reached.</p>
+        )}
       </section>
     </section>
   );
