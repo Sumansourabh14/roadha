@@ -15,10 +15,10 @@ const solutions = [
     title: "Learn",
     link: "/learn",
   },
-  {
-    title: "Resources",
-    link: "/resources",
-  },
+  // {
+  //   title: "Resources",
+  //   link: "/resources",
+  // },
   {
     title: "Road Safety Course",
     link: "/road-safety/beginner",
