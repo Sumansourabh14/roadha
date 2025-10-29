@@ -41,19 +41,20 @@ const TriviaPopup = () => {
     }
 
     return selectedAnswer === data[2].correct ? (
-      <div className="mt-4 text-green-600 font-semibold">
-        ✅ Correct! You&apos;re road smart.
-        <br />
+      <div className="mt-4 text-green-600 font-semibold space-y-2">
+        <p>✅ Correct! You&apos;re road smart.</p>
         <Link href={`/`}>
-          <Button className="mt-2" onClick={() => setOpen(false)}>
+          <Button
+            className="mt-2 cursor-pointer"
+            onClick={() => setOpen(false)}
+          >
             Start Exploring
           </Button>
         </Link>
       </div>
     ) : (
-      <div className="mt-4 text-red-600 font-semibold">
-        ❌ Not quite. That&apos;s not the safest option.
-        <br />
+      <div className="mt-4 text-red-600 font-semibold space-y-2">
+        <p>❌ Not quite. That&apos;s not the safest option.</p>
         <Link href={`/learn/road-safety-course-beginners`}>
           <Button
             variant="destructive"

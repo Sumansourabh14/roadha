@@ -16,7 +16,7 @@
   },
   {
     "question": "When should you use high beams?",
-    "options": ["Always", "Fog", "Empty highway", "Daytime"],
+    "options": ["Always", "Fog", "Empty highway at night", "Daytime"],
     "correct": 2
   },
   {
