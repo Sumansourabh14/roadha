@@ -6,7 +6,7 @@ const RoadSafety = () => {
   return (
     <section className="px-8">
       <section className="pt-24 pb-8">
-        <H1 title="Ultimate Road Safety Course 2025" />
+        <H1 title="Ultimate Road Safety Course" />
       </section>
       <ItemTable data={roadSafetyCourseBegineerData} />
     </section>

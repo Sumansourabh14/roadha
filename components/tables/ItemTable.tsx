@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Table,
   TableBody,
@@ -18,6 +19,7 @@ type Item = {
   reference_video_link: string[]; // fix this
   tags: string[];
   importance: string;
+  slug?: string;
 };
 
 type Props = {
@@ -42,7 +44,16 @@ const ItemTable = ({ data }: Props) => {
           <TableRow key={item.id}>
             <TableCell className="font-medium text-center">{item.id}</TableCell>
             <TableCell className="break-words whitespace-normal">
-              {item.title}
+              {item.slug ? (
+                <Link
+                  href={`/road-safety/beginner/${item.slug}`}
+                  className="underline hover:decoration-double"
+                >
+                  {item.title}
+                </Link>
+              ) : (
+                item.title
+              )}
             </TableCell>
             <TableCell className="break-words whitespace-normal">
               {item.description}
