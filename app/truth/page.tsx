@@ -66,7 +66,8 @@ const TruthPage = () => {
               Roadha
             </span>
           </strong>{" "}
-          is India’s first road safety learning platform
+          is just trying to have a positive impact on India’s lack of road
+          safety problem.
         </p>
         {/* <ul className="list-disc list-inside pl-4">
           <li>Breaks down rules into simple, relatable tips 📘</li>
