@@ -8,7 +8,9 @@ const RoadSafety = () => {
       <section className="pt-24 pb-8">
         <H1 title="Ultimate Road Safety Course" />
       </section>
-      <ItemTable data={roadSafetyCourseBegineerData} />
+      <section className="pb-32">
+        <ItemTable data={roadSafetyCourseBegineerData} />
+      </section>
     </section>
   );
 };
