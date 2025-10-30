@@ -62,7 +62,10 @@ const ItemTable = ({ data }: Props) => {
             <TableCell className="break-words whitespace-normal">
               {item.category}
             </TableCell>
-            <TableCell className="text-center">{item.importance}</TableCell>
+            <TableCell className="text-center">
+              {item.importance.charAt(0).toUpperCase()}
+              {item.importance.slice(1)}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
