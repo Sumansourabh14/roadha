@@ -8,7 +8,7 @@ const Truth = () => {
         <H2 title="Are the accidents really that much?" />
         <Link
           href={`/truth`}
-          className="py-4 px-12 bg-white text-black rounded-sm font-bold text-xl"
+          className="py-4 px-12 bg-green-300 text-black rounded-sm font-bold text-xl"
         >
           Sadly, yes
         </Link>
