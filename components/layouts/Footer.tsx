@@ -1,7 +1,11 @@
 import { SITE_METADATA } from "@/data/constants";
 import Link from "next/link";
 import SocialLink from "../navigation/SocialLink";
-import { GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 
 const resources = [
   {
@@ -51,12 +55,18 @@ const issues = [
 const socialLinks = [
   {
     id: "1",
+    title: "Instagram",
+    link: "https://instagram.com/roadha.india",
+    icon: InstagramLogoIcon,
+  },
+  {
+    id: "2",
     title: "Twitter/X",
     link: "https://x.com/roadha_",
     icon: TwitterLogoIcon,
   },
   {
-    id: "2",
+    id: "3",
     title: "GitHub",
     link: "https://github.com/Sumansourabh14/roadha",
     icon: GitHubLogoIcon,
