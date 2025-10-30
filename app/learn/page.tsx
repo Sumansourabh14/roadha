@@ -1,4 +1,5 @@
 import H1 from "@/components/text/H1";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -19,14 +20,17 @@ const Learn = () => {
         <Link href={`/learn/road-safety-course-beginners`}>
           <Card className="max-w-[500px] mx-auto">
             <CardHeader>
-              <CardTitle>Ultimate Road Safety Course</CardTitle>
-              <CardDescription>
+              <CardTitle className="text-xl">
+                Road Safety Course (India)
+              </CardTitle>
+              <CardDescription className="pt-4">
                 A complete beginner-friendly guide to road rules, tips &
                 real-life scenarios.
               </CardDescription>
             </CardHeader>
-            <CardContent>
-              <p>Level: Beginner</p>
+            <CardContent className="space-y-2">
+              <p className="text-sm">3/50 lessons</p>
+              <Badge variant="default">Beginner</Badge>
             </CardContent>
           </Card>
         </Link>
