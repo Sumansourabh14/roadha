@@ -48,7 +48,8 @@
     "google_slide_link": "",
     "reference_video_link": [],
     "tags": ["driving", "rules", "lane"],
-    "importance": "high"
+    "importance": "high",
+    "slug": "drive-on-the-correct-side-of-the-road"
   },
   {
     "id": 5,
@@ -60,7 +61,8 @@
     "google_slide_link": "",
     "reference_video_link": [],
     "tags": ["control", "limits", "speed"],
-    "importance": "high"
+    "importance": "high",
+    "slug": "obey-speed-limits"
   },
   {
     "id": 6,
