@@ -66,7 +66,7 @@ const features = [
 
 export function BentoGrid1() {
   return (
-    <BentoGrid className="lg:grid-rows-3 max-w-[1000px] mx-auto py-40 px-6">
+    <BentoGrid className="lg:grid-rows-3 max-w-[1000px] mx-auto py-16 px-6">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}
