@@ -12,6 +12,7 @@ const resources = [
     title: "Truth",
     link: "/truth",
   },
+  { title: "About", link: "/about" },
 ];
 
 const solutions = [

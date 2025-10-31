@@ -26,6 +26,7 @@ const navLinks = [
   { name: "Learn", href: "/learn" },
   // { name: "Resources", href: "/resources" },
   { name: "Ask", href: "/ask/roadha" },
+  { name: "About", href: "/about" },
   { name: "Road Safety Course", href: "/road-safety/beginner" },
 ];
 
