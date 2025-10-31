@@ -80,14 +80,14 @@ export default function Navbar() {
                 >
                   Stop wrong side driving. Why? Let me show you
                 </ListItem>
-                <ListItem href="/issues/driving/drunk" title="Drunk driving">
+                {/* <ListItem href="/issues/driving/drunk" title="Drunk driving">
                   Coming soon...
-                </ListItem>
+                </ListItem> */}
                 <ListItem
                   href="/issues/driving/reckless"
                   title="Reckless driving"
                 >
-                  Coming soon...
+                  Stop reckless driving
                 </ListItem>
                 <ListItem
                   href="/issues/ethanol-blended-petrol"

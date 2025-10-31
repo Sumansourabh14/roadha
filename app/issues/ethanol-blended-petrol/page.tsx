@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const EthanolBlendedPetrol = () => {
   return (
     <>
-      <section className="flex flex-col gap-[24px] px-8 py-20 md:py-24 max-w-[1440px] mx-auto">
+      <section className="flex flex-col gap-[24px] px-8 py-12 md:py-24 max-w-[1440px] mx-auto">
         <H1 title="Ethanol Blended Petrol" />
 
         <section className="max-w-xl space-y-4 mt-2">

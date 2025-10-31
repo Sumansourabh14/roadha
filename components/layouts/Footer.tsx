@@ -39,10 +39,10 @@ const issues = [
     title: "Wrong side driving",
     link: "/issues/driving/wrong-side",
   },
-  {
-    title: "Drunk driving",
-    link: "/issues/driving/drunk",
-  },
+  // {
+  //   title: "Drunk driving",
+  //   link: "/issues/driving/drunk",
+  // },
   {
     title: "Reckless driving",
     link: "/issues/driving/reckless",
