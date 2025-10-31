@@ -1,8 +1,9 @@
 import H1 from "@/components/text/H1";
+import { SITE_METADATA } from "@/data/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wrong Side Driving - Issues | Roadha",
+  title: `Wrong Side Driving - Issues | ${SITE_METADATA.title}`,
   description: "Wrong side driving",
 };
 
@@ -13,7 +14,7 @@ const WrongSideDriving = () => {
         <H1 title="Wrong Side Driving" />
 
         <section className="max-w-xl space-y-4 mt-8">
-          <p className="p-4 bg-accent-foreground rounded-sm">
+          <p>
             Wrong side driving happens when a person drives against the
             authorized flow of traffic.
           </p>

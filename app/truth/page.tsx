@@ -1,8 +1,9 @@
 import H1 from "@/components/text/H1";
+import { SITE_METADATA } from "@/data/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Truth | Roadha",
+  title: `The Truth | ${SITE_METADATA.title}`,
   description: "What's wrong with us?",
 };
 
@@ -48,7 +49,12 @@ const TruthPage = () => {
         </p>
 
         <p>
-          <strong>So, why Roadha?</strong>
+          Honestly, many people still know the rules but choose to ignore them
+          because &apos;It is India&apos;.
+        </p>
+
+        <p>
+          <strong>So why Roadha?</strong>
         </p>
 
         <p>

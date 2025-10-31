@@ -1,9 +1,10 @@
 import H1 from "@/components/text/H1";
 import TweetEmbed from "@/components/utils/TweetEmbed";
+import { SITE_METADATA } from "@/data/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ethanol Blended Petrol - Issues | Roadha",
+  title: `Ethanol Blended Petrol - Issues | ${SITE_METADATA.title}`,
   description: "Ethanol Blended Petrol",
 };
 

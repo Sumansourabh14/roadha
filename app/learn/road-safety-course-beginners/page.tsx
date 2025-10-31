@@ -1,6 +1,13 @@
 import ItemTable from "@/components/tables/ItemTable";
 import H1 from "@/components/text/H1";
+import { SITE_METADATA } from "@/data/constants";
 import roadSafetyCourseBeginnerData from "@/data/road_safety_rules_with_tags.json";
+
+export const metadata = {
+  title: `Road Safety Course - Beginner | ${SITE_METADATA.title}`,
+  description:
+    "FREE Step-by-step course covering road safety rules, tips & scenarios in India.",
+};
 
 const RoadSafety = () => {
   return (

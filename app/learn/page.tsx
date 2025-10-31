@@ -7,7 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { SITE_METADATA } from "@/data/constants";
 import Link from "next/link";
+
+export const metadata = {
+  title: `Learn | ${SITE_METADATA.title}`,
+  description: "Learn Road Safety",
+};
 
 const Learn = () => {
   return (
