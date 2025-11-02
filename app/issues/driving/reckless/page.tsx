@@ -42,6 +42,12 @@ const RecklessDriving = () => {
           </p>
           <p>What a sad state of law in this country!</p>
 
+          <p>
+            <strong>Similar incident:</strong>
+          </p>
+
+          <TweetEmbed tweetId={"1984876705295556769"} />
+
           <p className="text-3xl font-bold uppercase text-red-500">
             NEVER GIVE YOUR CAR TO YOUR UNDERAGE CHILD.
           </p>
