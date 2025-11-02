@@ -60,7 +60,7 @@ const RecklessDriving = () => {
           <TweetEmbed tweetId={"1975249363262972148"} />
 
           <p className="text-3xl font-bold uppercase text-red-500">
-            Always check your mirros before merging or taking a U-turn.
+            Always check your mirrors before merging or taking a U-turn.
           </p>
 
           <TweetEmbed tweetId={"1970054628617470242"} />
