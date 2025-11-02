@@ -113,7 +113,8 @@
       "lane",
       "signal"
     ],
-    "importance": "high"
+    "importance": "high",
+    "slug": "use-indicators-for-turns-and-lane-changes"
   },
   {
     "id": 8,
