@@ -154,7 +154,26 @@
     "importance": "high"
   },
   {
-    "id": 11,
+    "id": 11.1,
+    "level": 2,
+    "category": "Safety Practices & Driver Etiquette",
+    "title": "Don\u2019t Hang Out of the Sunroof",
+    "description": "Standing or leaning out of a sunroof may look fun, but it’s extremely dangerous and illegal.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "sunroof",
+      "passenger safety",
+      "head injury",
+      "India",
+      "road safety",
+      "visibility"
+    ],
+    "importance": "high"
+  },
+  {
+    "id": 11.2,
     "level": 2,
     "category": "Safety Practices & Driver Etiquette",
     "title": "Give Right of Way When Required",
