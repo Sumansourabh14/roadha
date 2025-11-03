@@ -8,7 +8,8 @@
     "obey-speed-limits",
     "respect-speed-breakers",
     "do-not-drink-and-drive",
-    "use-indicators-for-turns-and-lane-changes"
+    "use-indicators-for-turns-and-lane-changes",
+    "always-carry-valid-documents"
   ],
   "defaultOpen": true
 }
