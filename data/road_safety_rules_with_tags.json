@@ -1,5 +1,26 @@
 [
   {
+    "id": 0,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Always Use Dashcams",
+    "description": "Dashcams are essential for capturing road incidents, protecting drivers legally, and promoting safer driving habits. For two-wheelers, use action cameras",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "dashcam",
+      "safety",
+      "evidence",
+      "driving",
+      "India",
+      "awareness",
+      "accidents"
+    ],
+    "importance": "high",
+    "slug": "always-use-dashcams"
+  },
+  {
     "id": 1,
     "level": 1,
     "category": "Basic Must-Knows (Awareness & Obedience)",
