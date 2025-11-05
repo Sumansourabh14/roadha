@@ -1,7 +1,6 @@
 {
   "title": "Basic Must-Knows (Awareness & Obedience)",
   "pages": [
-    "always-use-dashcams",
     "wear-seatbelts-and-helmets",
     "follow-traffic-signals-and-road-signs",
     "do-not-use-mobile-phones-while-driving",
@@ -11,7 +10,8 @@
     "do-not-drink-and-drive",
     "use-indicators-for-turns-and-lane-changes",
     "always-carry-valid-documents",
-    "use-proper-parking-areas"
+    "use-proper-parking-areas",
+    "always-use-dashcams"
   ],
   "defaultOpen": true
 }
