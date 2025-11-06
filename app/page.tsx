@@ -6,6 +6,7 @@ import FAQ from "@/components/sections/home/FAQ";
 import Hero from "@/components/sections/home/Hero";
 import Truth from "@/components/sections/home/Truth";
 import WhyRoadha from "@/components/sections/home/WhyRoadha";
+import HomeUserReviews from "@/components/testimonals/HomeUserReviews";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <WhyRoadha />
         <Truth />
         <BentoGrid1 />
+        <HomeUserReviews />
         <FAQ />
         <TriviaPopup />
       </main>
