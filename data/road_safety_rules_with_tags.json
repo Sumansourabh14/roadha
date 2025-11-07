@@ -52,6 +52,26 @@
     "slug": "drive-on-the-correct-side-of-the-road"
   },
   {
+    "id": 4.1,
+    "level": 1,
+    "category": "Basic Must-Knows (Awareness & Obedience)",
+    "title": "Avoid Wrong Side Driving",
+    "description": "Driving on the wrong side of the road is illegal, dangerous, and a major cause of accidents in India.",
+    "youtube_link": "",
+    "google_slide_link": "",
+    "reference_video_link": [],
+    "tags": [
+      "wrong side",
+      "driving",
+      "accidents",
+      "India",
+      "road safety",
+      "rules"
+    ],
+    "importance": "high",
+    "slug": "avoid-wrong-side-driving"
+  },
+  {
     "id": 5,
     "level": 1,
     "category": "Basic Must-Knows (Awareness & Obedience)",
