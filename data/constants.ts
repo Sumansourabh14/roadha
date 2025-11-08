@@ -4,3 +4,8 @@ export const SITE_METADATA = {
 };
 
 export const SITE_TITLE = "Roadha";
+
+export const LANGUAGES = [
+  { label: "English", value: "en" },
+  { label: "हिन्दी", value: "hi" },
+];

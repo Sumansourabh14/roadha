@@ -21,6 +21,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
+import LanguageSelector from "../selectors/LanguageSelector";
 
 const navLinks = [
   { name: "Learn", href: "/learn" },
@@ -66,8 +67,9 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <NavigationMenu className="hidden md:flex items-center">
+        <NavigationMenu className="hidden md:flex items-center gap-2">
           <ModeToggle />
+          <LanguageSelector />
           <NavigationMenuItem className="list-none ml-2">
             <NavigationMenuTrigger className="text-muted-foreground font-semibold">
               Issues
@@ -124,6 +126,7 @@ export default function Navbar() {
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-4">
               <ModeToggle />
+              <LanguageSelector />
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
