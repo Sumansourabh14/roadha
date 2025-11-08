@@ -1,5 +1,14 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "../ui/marquee";
+import { useTranslations } from "next-intl";
+
+type Review = {
+  img: string;
+  name: string;
+  username: string;
+  body: string;
+  link?: string;
+};
 
 const reviews = [
   {
@@ -48,7 +57,7 @@ const reviews = [
     name: "James",
     username: "@TheMadEmperor666",
     body: "Brilliant initiative mate",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/indianbikes/comments/1olp771/comment/nmjqplh/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -69,7 +78,7 @@ const reviews = [
     name: "James",
     username: "@parlellname",
     body: "Super informative mate",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/indianbikes/comments/1olp771/comment/nmkjptp/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -90,7 +99,7 @@ const reviews = [
     name: "James",
     username: "@Lanky-Patience-1523",
     body: "Bahut badhiya Bhai. 🤗",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/indianbikes/comments/1olp771/comment/nmn73li/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -104,7 +113,7 @@ const reviews = [
     name: "James",
     username: "@Creepy-Ad-242",
     body: "Good initiative bro we don't have driving sense I have lost my cousin in road accident although it was his mistake was driving on wrong side was hit by a truck .",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/IndianEngineers/comments/1ooeu8v/comment/nn74tb7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -139,7 +148,7 @@ const reviews = [
     name: "James",
     username: "@sarvesh_18",
     body: "Excellent initiative! Hope it reaches lots of people.",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/indianbikes/comments/1olp771/comment/nmqhjax/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -160,7 +169,7 @@ const reviews = [
     name: "James",
     username: "@rohanad1986",
     body: "Great work man. Looks good.",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/Dashcamindia/comments/1oni63u/comment/nn0wkrw/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -181,7 +190,7 @@ const reviews = [
     name: "James",
     username: "@AlphaPhiKappa",
     body: "I am on 'how to wear seat belts' lesson now. Jokes apart, really grateful for such a thoughtful website. Looking forward to find surprising things that gets easily ignored",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://avatar.vercel.sh/jill",
     link: "https://www.reddit.com/r/vercel/comments/1ooew9k/comment/nn3rigl/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
   {
@@ -193,21 +202,7 @@ const reviews = [
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
-
-const ReviewCard = ({
-  img,
-  username,
-  body,
-  link,
-}: {
-  img: string;
-  name: string;
-  username: string;
-  body: string;
-  link?: string;
-}) => {
+const ReviewCard = ({ img, username, body, link }: Review) => {
   return (
     <a href={link ? link : ""} target="_blank">
       <figure
@@ -238,15 +233,33 @@ const ReviewCard = ({
 };
 
 export function ReviewsMarquee() {
+  const t = useTranslations("Testimonials");
+  const translatedReviews = t.raw("reviews");
+
+  const translationMap = new Map(
+    translatedReviews.map((r: { username: string; body: string }) => [
+      r.username,
+      r.body,
+    ])
+  );
+
+  const mergedReviews: Review[] = reviews.map((review) => ({
+    ...review,
+    body: String(translationMap.get(review.username) || review.body),
+  }));
+
+  const firstRow = mergedReviews.slice(0, reviews.length / 2);
+  const secondRow = mergedReviews.slice(reviews.length / 2);
+
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:80s]">
-        {firstRow.map((review) => (
+        {firstRow.map((review: Review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
       <Marquee reverse pauseOnHover className="[--duration:80s]">
-        {secondRow.map((review) => (
+        {secondRow.map((review: Review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
