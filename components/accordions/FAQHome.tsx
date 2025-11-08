@@ -4,9 +4,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import faqs from "@/data/faq.json";
+import { useTranslations } from "next-intl";
+
+type Question = {
+  question: string;
+  answer: string;
+};
 
 const FAQHome = () => {
+  const t = useTranslations("FAQ");
+
   return (
     <div>
       <Accordion
@@ -14,7 +21,7 @@ const FAQHome = () => {
         collapsible
         defaultValue="What is this site about?"
       >
-        {faqs.map((item, index) => (
+        {t.raw("questions").map((item: Question, index: number) => (
           <AccordionItem value={item.question} key={index}>
             <AccordionTrigger className="cursor-pointer">
               {item.question}

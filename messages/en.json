@@ -53,5 +53,22 @@
         "cta": "Explore safety habits"
       }
     ]
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "questions": [
+      {
+        "question": "What is Roadha?",
+        "answer": "Roadha is a platform to learn Indian road safety rules through short lessons, tips, and quizzes."
+      },
+      {
+        "question": "Who is it for?",
+        "answer": "Anyone who drives, rides, or wants to understand road rules better."
+      },
+      {
+        "question": "Is it free?",
+        "answer": "Yes!"
+      }
+    ]
   }
 }
