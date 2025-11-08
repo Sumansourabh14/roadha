@@ -34,5 +34,24 @@
         "paragraph": "Build habits that protect you, your family, and others on the road."
       }
     ]
+  },
+  "Features": {
+    "features": [
+      {
+        "heading": "Ask Roadha",
+        "paragraph": "Ask Roadha about any road safety tips and laws.",
+        "cta": "Ask Roadha"
+      },
+      {
+        "heading": "Ultimate Road Safety Guide",
+        "paragraph": "FREE Step-by-step course covering road safety rules, tips & scenarios in India.",
+        "cta": "Start learning"
+      },
+      {
+        "heading": "Seatbelt & Helmet Awareness",
+        "paragraph": "Learn why skipping helmets or seatbelts, even for short trips, can be fatal. Includes real examples and laws.",
+        "cta": "Explore safety habits"
+      }
+    ]
   }
 }
