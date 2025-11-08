@@ -7,5 +7,32 @@
   "Truth": {
     "title": "Are the accidents really that much?",
     "button": "Sadly, yes"
+  },
+  "WhyRoadha": {
+    "heading": "Why Roadha?",
+    "paragraphs": [
+      "It is simple.",
+      "Indians keep on buying more & more cars. But have their brains gotten bigger with the road safety knowledge too?",
+      "Not so much.",
+      "According to MoRTH, <strong class='text-4xl font-bold text-red-400'>153,972</strong> persons were <a href='https://tripc.iitd.ac.in/assets/publication/RSI_2023_web.pdf' class='underline hover:no-underline' target='_blank'>killed in road crashes</a> in the year 2021.",
+      "Are these increasing year by year?",
+      "Yes.",
+      "Hence, Roadha."
+    ],
+    "subheading": "A platform where you can...",
+    "abilities": [
+      {
+        "heading": "Learn the Rules",
+        "paragraph": "Master the basics of Indian traffic laws through structured, simple lessons."
+      },
+      {
+        "heading": "Quiz Your Knowledge",
+        "paragraph": "Interactive quizzes help reinforce safety tips and real-life scenarios."
+      },
+      {
+        "heading": "Drive with Confidence",
+        "paragraph": "Build habits that protect you, your family, and others on the road."
+      }
+    ]
   }
 }
