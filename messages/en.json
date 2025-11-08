@@ -3,5 +3,9 @@
     "title": "Road Safety, Redefined.",
     "subtitle": "A step-by-step road safety platform built for India, packed with tips & rules.",
     "button": "Start Learning Road Safety"
+  },
+  "Truth": {
+    "title": "Are the accidents really that much?",
+    "button": "Sadly, yes"
   }
 }
