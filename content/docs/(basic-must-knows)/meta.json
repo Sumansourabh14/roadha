@@ -12,7 +12,8 @@
     "use-indicators-for-turns-and-lane-changes",
     "always-carry-valid-documents",
     "use-proper-parking-areas",
-    "always-use-dashcams"
+    "always-use-dashcams",
+    "do-not-overload-vehicles"
   ],
   "defaultOpen": true
 }
