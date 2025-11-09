@@ -183,5 +183,34 @@
         "body": "damn lovely project and initiative. including videos from twitter and yt along with law stuff, the thought process behind making this, i highly appreciate it. will share among friends."
       }
     ]
+  },
+  "Navbar": {
+    "brand": "Roadha",
+    "issues": {
+      "title": "Issues",
+      "items": [
+        {
+          "title": "Wrong side driving",
+          "label": "Stop wrong side driving. Why? Let me show you",
+          "link": "/issues/driving/wrong-side"
+        },
+        {
+          "title": "Reckless driving",
+          "label": "Stop reckless driving",
+          "link": "/issues/driving/reckless"
+        },
+        {
+          "title": "Wrong side driving",
+          "label": "Ethanol Blended Petrol",
+          "link": "/issues/ethanol-blended-petrol"
+        }
+      ]
+    },
+    "navItems": [
+      { "name": "Learn", "link": "/learn" },
+      { "name": "Ask", "link": "/ask/roadha" },
+      { "name": "About", "link": "/about" },
+      { "name": "Road Safety Course", "link": "/road-safety/beginner" }
+    ]
   }
 }
