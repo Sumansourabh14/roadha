@@ -35,7 +35,7 @@ const Learn = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <p className="text-sm">12/51 lessons</p>
+              <p className="text-sm">14/52 lessons</p>
               <Badge variant="default">Beginner</Badge>
             </CardContent>
           </Card>
