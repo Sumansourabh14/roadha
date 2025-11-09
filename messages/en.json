@@ -228,5 +228,13 @@
       "title": "Solutions"
     },
     "copyright": "All Rights Reserved"
+  },
+  "Theme": {
+    "title": "Toggle theme",
+    "modes": {
+      "light": "light",
+      "dark": "dark",
+      "system": "system"
+    }
   }
 }
