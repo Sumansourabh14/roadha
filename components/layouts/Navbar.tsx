@@ -22,17 +22,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
-
-type NavItem = {
-  name: string;
-  link: string;
-};
-
-type IssueItem = {
-  title: string;
-  label: string;
-  link: string;
-};
+import { IssueItem, NavItem } from "@/types";
 
 function ListItem({
   title,

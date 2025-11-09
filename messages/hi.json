@@ -212,5 +212,24 @@
       { "name": "परिचय", "link": "/about" },
       { "name": "सड़क सुरक्षा पाठ्यक्रम", "link": "/road-safety/beginner" }
     ]
+  },
+  "Footer": {
+    "agenda": {
+      "title": "एजेंडा",
+      "items": [
+        {
+          "name": "सच्चाई",
+          "link": "/truth"
+        },
+        {
+          "name": "परिचय",
+          "link": "/about"
+        }
+      ]
+    },
+    "solutions": {
+      "title": "समाधान"
+    },
+    "copyright": "सर्वाधिकार सुरक्षित"
   }
 }

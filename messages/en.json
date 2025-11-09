@@ -212,5 +212,21 @@
       { "name": "About", "link": "/about" },
       { "name": "Road Safety Course", "link": "/road-safety/beginner" }
     ]
+  },
+  "Footer": {
+    "agenda": {
+      "title": "Agenda",
+      "items": [
+        {
+          "name": "Truth",
+          "link": "/truth"
+        },
+        { "name": "About", "link": "/about" }
+      ]
+    },
+    "solutions": {
+      "title": "Solutions"
+    },
+    "copyright": "All Rights Reserved"
   }
 }
