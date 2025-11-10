@@ -200,6 +200,13 @@ const reviews = [
     img: "https://avatar.vercel.sh/james",
     link: "https://www.reddit.com/r/Btechtards/comments/1ooeytp/comment/nn777ls/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
   },
+  {
+    name: "James",
+    username: "@amyegan",
+    body: "Congrats on your success so far! Awesome of you to build something free to improve road safely.",
+    img: "https://avatar.vercel.sh/jill",
+    link: "https://www.reddit.com/r/vercel/comments/1osquak/comment/no3mz0n/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+  },
 ];
 
 const ReviewCard = ({ img, username, body, link }: Review) => {
