@@ -1,5 +1,10 @@
 {
   "title": "Safety Practices & Driver Etiquette",
-  "pages": ["do-not-hang-out-of-the-sunroof"],
+  "pages": [
+    "do-not-hang-out-of-the-sunroof",
+    "give-right-of-way-when-required",
+    "respect-pedestrian-crossings-and-zones",
+    "use-mirrors-and-check-blind-spots"
+  ],
   "defaultOpen": false
 }
