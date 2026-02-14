@@ -258,5 +258,29 @@
     "errors": {
       "characterLimit": "Character limit reached. Please shorten your question."
     }
+  },
+  "About": {
+    "title": "About",
+    "paragraphs": [
+      "<strong>Roadha</strong> is your go-to guide for road safety in India.",
+      "Whether you are new behind the wheel or just want to brush up on the rules, we have got you covered.",
+      "Roadha breaks things down step-by-step.",
+      "From understanding traffic signs to knowing what to do in an emergency, Roadha makes it easy to stay safe and informed."
+    ],
+    "justStartingOut": {
+      "title": "Just starting out?",
+      "paragraphs": [
+        "Our beginner road safety course is the perfect way to get up to speed.",
+        "It is packed with easy-to-follow lessons, real-world tips, and helpful visuals to make learning fun and practical."
+      ]
+    },
+    "cta": {
+      "title": "Start course (FREE)"
+    },
+    "ending": [
+      "Every Indian citizen should take this course.",
+      "Roadha believes safer roads start with smarter choices.",
+      "<strong>Ride safe. Drive safe.</strong>"
+    ]
   }
 }
