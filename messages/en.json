@@ -249,5 +249,14 @@
       "lessons": "lessons",
       "difficulty": "Beginner"
     }
+  },
+  "Ask": {
+    "title": "Ask Roadha...",
+    "placeholder": "Type anything about road safety/indian vehicles/laws/rules/tips...",
+    "button": "Ask",
+    "loading": "Loading...",
+    "errors": {
+      "characterLimit": "Character limit reached. Please shorten your question."
+    }
   }
 }

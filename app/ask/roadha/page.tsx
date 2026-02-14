@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import axios, { AxiosError } from "axios";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -21,6 +22,7 @@ const AskRoadha = () => {
   const [responses, setResponses] = useState<ResponseProps[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const t = useTranslations("Ask");
 
   const handleAskRoadha = async () => {
     if (!prompt) return;
@@ -54,7 +56,7 @@ const AskRoadha = () => {
   return (
     <section className="py-20 lg:py-28 min-h-[40rem]">
       <section className="max-w-2xl mx-auto px-8">
-        <h1 className="text-center text-5xl font-bold">Ask Roadha...</h1>
+        <h1 className="text-center text-5xl font-bold">{t("title")}</h1>
         {error && <p className="text-red-500 text-center mt-8">{error}</p>}
         <section className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           {responses.map((item) => (
@@ -69,7 +71,7 @@ const AskRoadha = () => {
         </section>
         <section className="flex flex-col gap-8">
           <Textarea
-            placeholder="Type anything about road safety/indian vehicles/laws/rules/tips..."
+            placeholder={t("placeholder")}
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
           />
@@ -78,11 +80,13 @@ const AskRoadha = () => {
             disabled={prompt.length === 0 || isLoading || prompt.length > 300}
             className="cursor-pointer"
           >
-            {isLoading ? "Loading..." : "Ask"}
+            {isLoading ? t("loading") : t("button")}
           </Button>
         </section>
         {prompt.length > 300 && (
-          <p className="text-red-500 mt-4 text-sm">Character limit reached.</p>
+          <p className="text-red-500 mt-4 text-sm">
+            {t("errors.characterLimit")}
+          </p>
         )}
       </section>
     </section>
