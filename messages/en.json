@@ -240,5 +240,14 @@
       "dark": "dark",
       "system": "system"
     }
+  },
+  "Learn": {
+    "title": "Learn Road Safety",
+    "course": {
+      "title": "Road Safety Course (India)",
+      "description": "A complete beginner-friendly guide to road rules, tips & real-life scenarios.",
+      "lessons": "lessons",
+      "difficulty": "Beginner"
+    }
   }
 }
