@@ -4,16 +4,7 @@ import type { NextConfig } from "next"; // ✅ Import the type
 const withMDX = createMDX();
 
 const config: NextConfig = {
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "ik.imagekit.io",
-        pathname: "/**",
-      },
-    ],
-  },
+  reactStrictMode: true
 };
 
 export default withMDX(config);
