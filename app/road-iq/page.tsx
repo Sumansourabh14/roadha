@@ -19,7 +19,7 @@ function RoadIQ() {
       ? metrics.find((metric) => score >= metric.min && score <= metric.max)
       : null;
 
-  const handleAnswer = (option) => {
+  const handleAnswer = (option: { id: string; score: number }) => {
     setSelectedOption(option.id);
     setScore(option.score);
 
