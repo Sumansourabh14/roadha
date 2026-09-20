@@ -4,9 +4,12 @@ import data from "@/data/roadiq/questions.json";
 import metrics from "@/data/roadiq/metrics.json";
 import { useState } from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function RoadIQ() {
   const [score, setScore] = useState<number | null>(null);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const { scenario } = data;
 
   const metric =
@@ -34,17 +37,37 @@ function RoadIQ() {
         <p className="mt-8 text-lg font-medium">{scenario.question}</p>
 
         <div className="mt-6 space-y-3">
-          {scenario.options.map((option) => (
-            <button
-              key={option.id}
-              onClick={() => setScore(option.score)}
-              disabled={score !== null}
-              className="w-full rounded-xl border p-4 text-left transition hover:bg-muted disabled:cursor-default disabled:opacity-60"
-            >
-              <span className="font-medium uppercase">{option.id}.</span>{" "}
-              {option.text}
-            </button>
-          ))}
+          {scenario.options.map((option) => {
+            const isSelected = selectedOption === option.id;
+            const isCorrect = option.score === 100;
+
+            let borderClass = "border";
+
+            if (selectedOption !== null) {
+              if (isSelected && isCorrect) {
+                borderClass = "border-green-500 bg-green-50";
+              } else if (isSelected && !isCorrect) {
+                borderClass = "border-red-500 bg-red-50";
+              } else if (!isSelected && isCorrect) {
+                borderClass = "border-green-500 bg-green-50";
+              }
+            }
+
+            return (
+              <button
+                key={option.id}
+                onClick={() => {
+                  setSelectedOption(option.id);
+                  setScore(option.score);
+                }}
+                disabled={selectedOption !== null}
+                className={`w-full rounded-xl border p-4 text-left transition ${borderClass}`}
+              >
+                <span className="font-medium uppercase">{option.id}.</span>{" "}
+                {option.text}
+              </button>
+            );
+          })}
         </div>
 
         {score !== null && metric && (
@@ -62,8 +85,27 @@ function RoadIQ() {
             <p className="mt-6 text-sm text-muted-foreground">
               {scenario.explanation}
             </p>
+
+            <div className="mt-8">
+              <Link href="/road-safety/beginner">
+                <Button className="text-base px-6 py-5 cursor-pointer">
+                  Learn road safety
+                </Button>
+              </Link>
+            </div>
           </div>
         )}
+
+        <div className="mt-8 text-center">
+          <Link
+            href="https://forms.gle/hnv3JZwkMs9bwP3R6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
+          >
+            Something feel off? Give feedback
+          </Link>
+        </div>
       </div>
     </main>
   );

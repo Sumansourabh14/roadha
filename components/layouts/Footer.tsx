@@ -16,6 +16,7 @@ const resources = [
 ];
 
 const solutions = [
+  { title: "Road IQ", link: "/road-iq" },
   {
     title: "Learn",
     link: "/learn",
