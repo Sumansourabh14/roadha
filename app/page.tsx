@@ -19,7 +19,6 @@ export default function Home() {
         <BentoGrid1 />
         <HomeUserReviews />
         <FAQ />
-        <TriviaPopup />
       </main>
       <Footer />
     </div>
