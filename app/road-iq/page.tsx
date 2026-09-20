@@ -54,15 +54,18 @@ function RoadIQ() {
             const isSelected = selectedOption === option.id;
             const isCorrect = option.score === 100;
 
-            let borderClass = "border";
+            let borderClass = "border-border bg-background text-foreground";
 
             if (selectedOption !== null) {
               if (isSelected && isCorrect) {
-                borderClass = "border-green-500 bg-green-50";
+                borderClass =
+                  "border-green-500 bg-green-50 text-green-900 dark:bg-green-950/40 dark:text-green-100";
               } else if (isSelected && !isCorrect) {
-                borderClass = "border-red-500 bg-red-50";
+                borderClass =
+                  "border-red-500 bg-red-50 text-red-900 dark:bg-red-950/40 dark:text-red-100";
               } else if (!isSelected && isCorrect) {
-                borderClass = "border-green-500 bg-green-50";
+                borderClass =
+                  "border-green-500 bg-green-50 text-green-900 dark:bg-green-950/40 dark:text-green-100";
               }
             }
 
