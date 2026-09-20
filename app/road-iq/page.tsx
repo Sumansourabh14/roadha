@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Info } from "lucide-react";
+import { posthog } from "posthog-js";
 
 function RoadIQ() {
   const [score, setScore] = useState<number | null>(null);
@@ -17,6 +18,17 @@ function RoadIQ() {
     score !== null
       ? metrics.find((metric) => score >= metric.min && score <= metric.max)
       : null;
+
+  const handleAnswer = (option) => {
+    setSelectedOption(option.id);
+    setScore(option.score);
+
+    posthog.capture("roadiq_answered", {
+      question_id: scenario.id,
+      option_id: option.id,
+      score: option.score,
+    });
+  };
 
   return (
     <main className="mx-auto min-h-[70vh] max-w-[1000px] px-6 py-16">
@@ -57,10 +69,7 @@ function RoadIQ() {
             return (
               <button
                 key={option.id}
-                onClick={() => {
-                  setSelectedOption(option.id);
-                  setScore(option.score);
-                }}
+                onClick={() => handleAnswer(option)}
                 disabled={selectedOption !== null}
                 className={`w-full rounded-xl border p-4 text-left transition ${borderClass}`}
               >

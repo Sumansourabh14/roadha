@@ -1,6 +1,7 @@
 {
   "id": 1,
   "scenario": {
+    "id": "pedestrian-crossing-01",
     "question": "You're approaching a zebra crossing and a pedestrian is waiting to cross.",
     "options": [
       {
