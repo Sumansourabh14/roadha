@@ -23,6 +23,7 @@ import {
 } from "../ui/navigation-menu";
 
 const navLinks = [
+  { name: "Road IQ", href: "/road-iq" },
   { name: "Learn", href: "/learn" },
   { name: "Ask", href: "/ask/roadha" },
   { name: "About", href: "/about" },
