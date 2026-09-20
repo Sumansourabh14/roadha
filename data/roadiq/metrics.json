@@ -1,0 +1,26 @@
+[
+  {
+    "min": 0,
+    "max": 30,
+    "title": "Reality Check",
+    "description": "There's some work to do on your road sense."
+  },
+  {
+    "min": 31,
+    "max": 60,
+    "title": "Needs Improvement",
+    "description": "You spotted part of the situation, but missed an important safety consideration."
+  },
+  {
+    "min": 61,
+    "max": 80,
+    "title": "Good Road Sense",
+    "description": "You're making reasonably safe decisions."
+  },
+  {
+    "min": 81,
+    "max": 100,
+    "title": "Sharp Road Sense",
+    "description": "You recognized the safest response."
+  }
+]

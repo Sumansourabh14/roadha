@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "scenario": {
+    "question": "You're approaching a zebra crossing and a pedestrian is waiting to cross.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep driving. They haven't stepped onto the road yet.",
+        "score": 10
+      },
+      {
+        "id": "b",
+        "text": "Honk to let them know you're coming, but don't stop and continue driving without slowing down.",
+        "score": 40
+      },
+      {
+        "id": "c",
+        "text": "Slow down, but continue to proceed if they remain on the side.",
+        "score": 70
+      },
+      {
+        "id": "d",
+        "text": "Slow down, come to a stop, and give the pedestrian way.",
+        "score": 100
+      }
+    ],
+    "explanation": "Slow down, come to a stop, and give the pedestrian way to ensure their safety. Don't drive through the crossing if a pedestrian is waiting to cross, as it is unsafe."
+  }
+}

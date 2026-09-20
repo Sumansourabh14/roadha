@@ -14,9 +14,9 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <Link href="/learn">
+          <Link href="/road-iq">
             <Button className="text-base px-6 py-5 cursor-pointer">
-              Start Learning Road Safety
+              Check your Road IQ
             </Button>
           </Link>
         </div>
