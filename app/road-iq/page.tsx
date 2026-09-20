@@ -6,6 +6,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Info } from "lucide-react";
 
 function RoadIQ() {
   const [score, setScore] = useState<number | null>(null);
@@ -105,6 +106,16 @@ function RoadIQ() {
           >
             Something feel off? Give feedback
           </Link>
+        </div>
+
+        <div className="mt-8 flex items-start justify-center gap-2 text-muted-foreground">
+          <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+
+          <p className="max-w-xl text-xs leading-relaxed">
+            Road IQ is a quick road-safety decision check.{" "}
+            <span className="font-medium">Score: 0–100.</span> It reflects your
+            decision in this situation, not your actual driving ability.
+          </p>
         </div>
       </div>
     </main>
